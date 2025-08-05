@@ -32,7 +32,7 @@
       let input = "";
 
       do {
-        input = prompt("Enter the dollar amount for your sales a single sale at a time.(e.g., 199.99) or type 'Done' to finish:");
+        input = prompt("Enter the dollar amount for your sales a single sale at a time. Enter Done when you are finished.");
         if (input !== null && input.toLowerCase() !== "done") {
           let sale = parseFloat(input);
           if (!isNaN(sale) && sale > 0) {
