@@ -39,7 +39,7 @@
             subtotal += sale;
           }
         }
-      } while (input !== null && input.toLowerCase() !== "done");
+      } while (input == null && input.toLowerCase() !== "done");
 
       let commissionRate = 0;
       if (subtotal > 0 && subtotal < 500) {
